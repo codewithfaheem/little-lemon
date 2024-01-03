@@ -1,13 +1,27 @@
 import React from "react";
-
-export default function VerticalNav(){
+import Heading from "../Headings/Headings";
+export default function VerticalNav(props){
+    const navItem = props.navItem ? (props.navItem) : ([{title : "",items: []}])
     return(
-        <nav>
-            <ul>
-                <li>
-                    <a href="">home</a>
-                </li>
-            </ul>
+        <nav className="flex gap-16 ps-16">
+            {navItem.map((mainItem,i)=>{
+                return(
+                    <div className="flex flex-col">
+                        <div>
+                            <Heading variant="h5" className="capitalize font-medium mb-4">{mainItem.title}</Heading>
+                        </div>
+                        <ul>
+                            {mainItem.items.map((item,j)=>{
+                                return(
+                                    <li>
+                                        <a href="">{item}</a>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </div>
+                )
+            })}
         </nav>
     )
 }
