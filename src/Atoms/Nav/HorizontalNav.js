@@ -8,13 +8,13 @@ export default function HorizontalNav(){
                     <a href="/" className="block mx-1 p-2 rounded text-primaryOne hover:bg-primaryOne hover:text-white">Home</a>
                 </li>
                 <li>
-                    <a href="/" className="block mx-1 p-2 rounded text-primaryOne hover:bg-primaryOne hover:text-white">About</a>
+                    <a href="/about" className="block mx-1 p-2 rounded text-primaryOne hover:bg-primaryOne hover:text-white">About</a>
                 </li>
                 <li>
                     <a href="/" className="block mx-1 p-2 rounded text-primaryOne hover:bg-primaryOne hover:text-white">Menu</a>
                 </li>
                 <li>
-                    <a href="/" className="block mx-1 p-2 rounded text-primaryOne hover:bg-primaryOne hover:text-white">Reservation</a>
+                    <a href="/reservation" className="block mx-1 p-2 rounded text-primaryOne hover:bg-primaryOne hover:text-white">Reservation</a>
                 </li>
                 <li>
                     <a href="/" className="block mx-1 p-2 rounded text-primaryOne hover:bg-primaryOne hover:text-white">Order online</a>

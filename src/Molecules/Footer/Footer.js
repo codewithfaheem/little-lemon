@@ -18,7 +18,7 @@ const navItem = [
 export default function Footer(){
     return(
         <footer className="flex items-center justify-center mb-8">
-            <div className="flex items-center justify-between">
+            <div className="flex w-2/4 items-center justify-between">
                 <div>
                     <img src={img} />
                 </div>

@@ -4,7 +4,7 @@ import logo from "./Logo.svg"
 export default function Header(){
     return(
         <header className="flex items-center justify-center">
-            <div className="flex items-center justify-between w-3/5 py-5">
+            <div className="flex items-center justify-between w-2/4 py-5">
                 <div>
                     <a href="/">
                         <img src={logo} />

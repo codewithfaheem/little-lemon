@@ -1,9 +1,11 @@
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import App from './Pages/Home/App';
+import AboutPage from './Pages/About/About';
+import Reservation from './Pages/Reservation/Reservation';
 
 const routes = createBrowserRouter([
   {
@@ -12,7 +14,11 @@ const routes = createBrowserRouter([
   },
   {
     path:"/about",
-    element: "About",
+    element: <AboutPage/>,
+  },
+  {
+    path:"/reservation",
+    element: <Reservation />,
   },
 ])
 
