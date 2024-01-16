@@ -14,7 +14,8 @@ module.exports = {
       garyLight: '#edefee',
       grayDark: '#333',
       white: '#fff',
-      black: '#000'
+      black: '#000',
+      transparent:'transparent'
     },
     extend: {},
   },

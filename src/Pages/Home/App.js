@@ -8,7 +8,7 @@ import Testimonials from '../../Molecules/Testimonials/Testimonial';
 
 function App() {
   return (
-    <div className="App flex flex-col bg-white">
+    <div className="App flex flex-col min-h-screen bg-white">
       <Header></Header>
       <main>
         <HeroSection></HeroSection>

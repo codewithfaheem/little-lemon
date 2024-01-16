@@ -3,6 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import store from './store/store';
+import { Provider } from 'react-redux';
 import App from './Pages/Home/App';
 import AboutPage from './Pages/About/About';
 import Reservation from './Pages/Reservation/Reservation';
@@ -25,7 +27,9 @@ const routes = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={routes} />
+    <Provider store={store}>
+      <RouterProvider router={routes} />
+    </Provider>
   </React.StrictMode>
 );
 
