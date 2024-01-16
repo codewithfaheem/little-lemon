@@ -27,10 +27,10 @@ const specialItems = [
 
 export default function Highlights(){
     return(
-        <div className="flex flex-col justify-center w-2/4 m-auto">
+        <div id="sec-menu" className="flex flex-col justify-center w-2/4 m-auto">
             <div className="flex justify-between items-center mt-12">
                 <Heading variant="h3" className="uppercase font-extrabold">This weeks specials!</Heading>
-                <Button type="link">Online Menu</Button>
+                {/* <Button type="link">Online Menu</Button> */}
             </div>
             <div className="grid grid-cols-3 gap-5 mt-4">
                 {specialItems.map((item,i)=>{

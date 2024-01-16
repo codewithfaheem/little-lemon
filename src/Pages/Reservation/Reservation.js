@@ -7,7 +7,7 @@ import ReservationForm from './ReservationForm';
 function Reservation() {
   const reservation = useSelector((state)=>state.reservation.reservations.at(-1))
   const isResAdded = useSelector((state)=>state.reservation.resAdded)
-  console.log(reservation)
+  // console.log(reservation)
   return (
     <div className="App flex flex-col min-h-screen bg-white">
       <Header></Header>

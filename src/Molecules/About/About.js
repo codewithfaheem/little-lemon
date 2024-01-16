@@ -3,7 +3,7 @@ import Heading from "../../Atoms/Headings/Headings";
 import image from "./about_placeholder.svg"
 export default function About(){
     return(
-        <div className="flex justify-center mt-12">
+        <div id="sec-about" className="flex justify-center pt-12">
             <div className="flex justify-between w-2/4">
                 <div className="w-3/6">
                     <Heading variant="h2" className="capitalize my-1">Little lemon</Heading>
